@@ -61,6 +61,7 @@ extension LoginViewController {
         view.addSubview(errorMessageLabel)
 
         // Title
+<<<<<<< HEAD
         NSLayoutConstraint.activate([
             subtitleView.topAnchor.constraint(equalToSystemSpacingBelow: titleView.bottomAnchor, multiplier: 3),
             titleView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
@@ -79,6 +80,26 @@ extension LoginViewController {
             view.centerYAnchor.constraint(equalTo: loginView.centerYAnchor),
         ])
 
+=======
+        NSLayoutConstraint.activate([
+            subtitleView.topAnchor.constraint(equalToSystemSpacingBelow: titleView.bottomAnchor, multiplier: 3),
+            titleView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+
+        // Subtitle
+        NSLayoutConstraint.activate([
+            loginView.topAnchor.constraint(equalToSystemSpacingBelow: subtitleView.bottomAnchor, multiplier: 3),
+            subtitleView.widthAnchor.constraint(equalTo: loginView.widthAnchor)
+        ])
+
+        // LoginView
+        NSLayoutConstraint.activate([
+            loginView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginView.trailingAnchor, multiplier: 2),
+            view.centerYAnchor.constraint(equalTo: loginView.centerYAnchor),
+        ])
+
+>>>>>>> 50213fb49bc592dc1d48a65088ad05c89e512683
         // Button
         NSLayoutConstraint.activate([
             signInButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
