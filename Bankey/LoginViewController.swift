@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Bankey
-//
-//  Created by Bruna Ebina on 06/07/22.
-//
-
 import UIKit
 
 class LoginViewController: UIViewController {
